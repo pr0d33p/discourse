@@ -8,6 +8,8 @@ module Tilt
   class ES6ModuleTranspilerTemplate < Tilt::Template
     self.default_mime_type = 'application/javascript'
 
+    attr_accessor :no_module
+
     @mutex = Mutex.new
     @ctx_init = Mutex.new
 
@@ -138,6 +140,7 @@ JS
     private
 
     def transpile_into_module?
+      return false if @no_module
       file.nil? || file.exclude?('.no-module')
     end
 
