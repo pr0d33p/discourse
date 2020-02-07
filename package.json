@@ -17,7 +17,7 @@
     "handlebars": "^4.3.0",
     "highlight.js": "https://github.com/highlightjs/highlight.js",
     "htmlparser": "https://github.com/tautologistics/node-htmlparser",
-    "intersection-observer": "^0.5.1",
+    "intersection-observer": "^0.7.0",
     "jquery": "3.4.1",
     "jquery-color": "3.0.0-alpha.1",
     "jquery-resize": "https://github.com/cowboy/jquery-resize/",
