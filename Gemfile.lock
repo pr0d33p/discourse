@@ -270,7 +270,7 @@ GEM
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     public_suffix (4.0.3)
-    puma (4.3.1)
+    puma (4.3.3)
       nio4r (~> 2.0)
     r2 (0.2.7)
     rack (2.0.8)
@@ -510,7 +510,7 @@ DEPENDENCIES
   pg
   pry-nav
   pry-rails
-  puma
+  puma (>= 4.3.3)
   r2
   rack (= 2.0.8)
   rack-mini-profiler
@@ -558,4 +558,4 @@ DEPENDENCIES
   yaml-lint
 
 BUNDLED WITH
-   2.1.1
+   1.17.3
