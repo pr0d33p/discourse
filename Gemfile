@@ -18,14 +18,14 @@ else
   # this allows us to include the bits of rails we use without pieces we do not.
   #
   # To issue a rails update bump the version number here
-  gem 'actionmailer', '6.0.1'
-  gem 'actionpack', '6.0.1'
-  gem 'actionview', '6.0.1'
+  gem 'actionmailer', '6.0.2.2'
+  gem 'actionpack', '6.0.2.2'
+  gem 'actionview', '6.0.2.2'
   gem 'activemodel', '6.0.1'
   gem 'activerecord', '6.0.1'
   gem 'activesupport', '6.0.1'
-  gem 'railties', '6.0.1'
-  gem 'sprockets-rails'
+  gem 'railties', '6.0.2.2'
+  gem 'sprockets-rails', '>= 3.2.1'
 end
 
 # TODO: At the moment Discourse does not work with Sprockets 4, we would need to correct internals
@@ -34,7 +34,7 @@ gem 'sprockets', '3.7.2'
 
 # this will eventually be added to rails,
 # allows us to precompile all our templates in the unicorn master
-gem 'actionview_precompiler', require: false
+gem 'actionview_precompiler', '>= 0.2.2', require: false
 
 gem 'seed-fu'
 
@@ -72,7 +72,7 @@ gem 'barber'
 
 gem 'message_bus'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 2.0.7'
 
 gem 'fast_xs', platform: :mri
 
@@ -225,7 +225,7 @@ gem 'memory_profiler', require: false, platform: :mri
 
 gem 'cppjieba_rb', require: false
 
-gem 'lograge', require: false
+gem 'lograge', '>= 0.11.2', require: false
 gem 'logstash-event', require: false
 gem 'logstash-logger', require: false
 gem 'logster'
@@ -233,7 +233,7 @@ gem 'logster'
 # NOTE: later versions of sassc are causing a segfault, possibly dependent on processer architecture
 # and until resolved should be locked at 2.0.1
 gem 'sassc', '2.0.1', require: false
-gem "sassc-rails"
+gem "sassc-rails", ">= 2.1.2"
 
 gem 'rotp', require: false
 gem 'rqrcode'
