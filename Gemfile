@@ -58,7 +58,7 @@ gem 'redis-namespace'
 # better maintained living fork
 gem 'active_model_serializers', '~> 0.8.3'
 
-gem 'onebox'
+gem 'onebox', '>= 1.9.26'
 
 gem 'http_accept_language', require: false
 
@@ -118,7 +118,7 @@ gem 'rake'
 gem 'thor', require: false
 gem 'diffy', require: false
 gem 'rinku'
-gem 'sanitize'
+gem 'sanitize', '>= 5.2.1'
 gem 'sidekiq'
 gem 'mini_scheduler'
 
