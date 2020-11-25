@@ -15,7 +15,7 @@
     "eslint-plugin-lodash": "^6.0.0",
     "favcount": "https://github.com/chrishunt/favcount",
     "handlebars": "^4.3.0",
-    "highlight.js": "https://github.com/highlightjs/highlight.js",
+    "highlight.js": "9.18.2",
     "htmlparser": "https://github.com/tautologistics/node-htmlparser",
     "intersection-observer": "^0.5.1",
     "jquery": "3.4.1",
