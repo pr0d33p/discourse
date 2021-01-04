@@ -25,7 +25,7 @@ else
   gem 'activerecord', '6.0.1'
   gem 'activesupport', '6.0.1'
   gem 'railties', '6.0.1'
-  gem 'sprockets-rails'
+  gem 'sprockets-rails', '>= 3.2.1'
 end
 
 # TODO: At the moment Discourse does not work with Sprockets 4, we would need to correct internals
@@ -34,7 +34,7 @@ gem 'sprockets', '3.7.2'
 
 # this will eventually be added to rails,
 # allows us to precompile all our templates in the unicorn master
-gem 'actionview_precompiler', require: false
+gem 'actionview_precompiler', '>= 0.2.2', require: false
 
 gem 'seed-fu'
 
@@ -58,7 +58,7 @@ gem 'redis-namespace'
 # better maintained living fork
 gem 'active_model_serializers', '~> 0.8.3'
 
-gem 'onebox'
+gem 'onebox', '>= 1.9.26'
 
 gem 'http_accept_language', require: false
 
@@ -72,7 +72,7 @@ gem 'barber'
 
 gem 'message_bus'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 2.0.7'
 
 gem 'fast_xs', platform: :mri
 
@@ -93,7 +93,7 @@ gem 'email_reply_trimmer'
 gem 'discourse_image_optim', require: 'image_optim'
 gem 'multi_json'
 gem 'mustache'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.11.0'
 gem 'css_parser', require: false
 
 gem 'omniauth'
@@ -118,7 +118,7 @@ gem 'rake'
 gem 'thor', require: false
 gem 'diffy', require: false
 gem 'rinku'
-gem 'sanitize'
+gem 'sanitize', '>= 5.1.0'
 gem 'sidekiq'
 gem 'mini_scheduler'
 
@@ -175,10 +175,10 @@ group :test, :development do
   gem 'rb-inotify', '~> 0.9', require: RUBY_PLATFORM =~ /linux/i ? 'rb-inotify' : false
 
   # TODO once 4.0.0 is released upgrade to it, at time of writing 3.9.0 is latest
-  gem 'rspec-rails', '4.0.0.beta2', require: false
+  gem 'rspec-rails', '4.0.0', require: false
 
   gem 'shoulda-matchers', require: false
-  gem 'rspec-html-matchers'
+  gem 'rspec-html-matchers', '>= 0.9.2'
   gem 'pry-nav'
   gem 'byebug', require: ENV['RM_INFO'].nil?
   gem 'rubocop', require: false
@@ -218,14 +218,14 @@ gem 'rbtrace', require: false, platform: :mri
 gem 'gc_tracer', require: false, platform: :mri
 
 # required for feed importing and embedding
-gem 'ruby-readability', require: false
+gem 'ruby-readability', '>= 0.7.0', require: false
 
 gem 'stackprof', require: false, platform: :mri
 gem 'memory_profiler', require: false, platform: :mri
 
 gem 'cppjieba_rb', require: false
 
-gem 'lograge', require: false
+gem 'lograge', '>= 0.11.2', require: false
 gem 'logstash-event', require: false
 gem 'logstash-logger', require: false
 gem 'logster'
@@ -233,7 +233,7 @@ gem 'logster'
 # NOTE: later versions of sassc are causing a segfault, possibly dependent on processer architecture
 # and until resolved should be locked at 2.0.1
 gem 'sassc', '2.0.1', require: false
-gem "sassc-rails"
+gem "sassc-rails", ">= 2.1.2"
 
 gem 'rotp', require: false
 gem 'rqrcode'
