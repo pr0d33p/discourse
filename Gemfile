@@ -94,7 +94,7 @@ gem 'discourse_image_optim', require: 'image_optim'
 gem 'multi_json'
 gem 'mustache'
 gem 'nokogiri'
-gem 'css_parser', require: false
+gem 'css_parser', '>= 1.7.1', require: false
 
 gem 'omniauth'
 gem 'omniauth-openid'
@@ -140,7 +140,7 @@ gem 'rack', '2.0.8'
 gem 'rack-protection' # security
 gem 'cbor', require: false
 gem 'cose', require: false
-gem 'addressable'
+gem 'addressable', '>= 2.8.0'
 
 # Gems used only for assets and not required in production environments by default.
 # Allow everywhere for now cause we are allowing asset debugging in production
@@ -150,7 +150,7 @@ group :assets do
 end
 
 group :test do
-  gem 'webmock', require: false
+  gem 'webmock', '>= 3.8.1', require: false
   gem 'fakeweb', require: false
   gem 'minitest', require: false
   gem 'simplecov', require: false
@@ -235,7 +235,7 @@ gem 'logster'
 gem 'sassc', '2.0.1', require: false
 gem "sassc-rails"
 
-gem 'rotp', require: false
+gem 'rotp', '>= 5.1.0', require: false
 gem 'rqrcode'
 
 gem 'rubyzip', require: false
