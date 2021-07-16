@@ -58,7 +58,7 @@ gem 'redis-namespace'
 # better maintained living fork
 gem 'active_model_serializers', '~> 0.8.3'
 
-gem 'onebox'
+gem 'onebox', '>= 2.2.18'
 
 gem 'http_accept_language', require: false
 
